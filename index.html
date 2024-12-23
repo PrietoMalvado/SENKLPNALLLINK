@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENK LPN</title>
+</head>
+<body>
+    
+    <header>
+        <p>Ultimos Lanzamientos...</p>
+    </header>
+
+    <div>
+        
+        <section>
+            <a href="link-a-overskills"><img src="Overskills.png" ></a>
+            <a href="https://open.spotify.com/intl-es/track/4CVMlmDsZe4gZg9HJfIpGv?si=5d0e538ec2db49ef"><img src="Mudanzas.png" ></a>
+            <a href="https://open.spotify.com/intl-es/track/71vnbJLMKgSPpZQ1EmUKdd?si=258e002319e24a96"><img src="WonderW.png" ></a>
+            <a href="https://open.spotify.com/intl-es/track/1O1t8szuK37ZNRMrWDUish?si=05e87a731a064ad9"><img src="bienmal.png" ></a>
+        </section>
+
+        
+        <div class="plataformas">
+            <a href="https://open.spotify.com/intl-es/artist/44pYmQdCSF4tNIZGrLF3oD"><img src="spotify.png" alt="Spotify"></a>
+            <a href="https://music.apple.com/us/artist/senk-lpn/1494341629"><img src="itunes.png" alt="iTunes"></a>
+            <a href="https://www.deezer.com/mx/artist/83560152"><img src="dezzer.png" alt="Deezer"></a>
+            <a href="https://soundcloud.com/senklpn"><img src="soundcloud.png" alt="SoundCloud"></a>
+            <a href="https://www.youtube.com/@SENKLPN"><img src="youtube1.png" alt="Youtube1"></a>
+            <a href="https://amazon.com/music/player/artists/B083SRY2QC/senk-lpn?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_uhuXBMzDRKRFjo9t4Bk66ZVzN"><img src="amazon2.png" alt="Amazon2"></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>SENK LPN</p>
+    </footer>
+</body>
+</html>
+
+<style>
+
+    body {
+        background: linear-gradient(to right, #ff0000, #780000); /* Cambia los colores */
+        margin: 20px;
+    }
+
+    body h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* titulos*/
+    header{
+        display: flex;
+        text-align: center;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+
+    header P {
+        color: rgb(255, 0, 0);
+        font-size: 25px;
+    }
+    /* titulos*/
+
+    .titular {
+        width: 100%; /* Ocupa todo el ancho */
+        height: 50px; /* Ajusta la altura según necesites */
+        background-color: rgb(177, 0, 186); /* Color de fondo para visualizarlo */
+        margin: 0; /* Elimina márgenes externos */
+        padding: 0.1px; /* Espaciado interno opcional */
+    }
+    
+    .titular h2{
+        display: flex;
+        padding-bottom: 100px;
+    }
+    /* Esta parte es del section que contiene las imagenes de overskills*/
+    
+    section {
+        display: flex; /* Activa flexbox */
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        flex-wrap: wrap; /* Asegura que los elementos se ajusten si hay varios */
+        width: 80%; /* Asegura que el contenedor ocupe el ancho completo */
+        height: 50vh; /* O altura específica si no deseas ocupar toda la ventana */
+        gap: 10px; /* Espaciado entre los elementos */
+
+        padding-left: 10%;
+        padding-top: 2%;
+    }
+
+    /* Estilo para los enlaces */
+    section a {
+        flex-grow: 1; /* Permite que cada enlace ocupe espacio dentro del contenedor flex */
+        display: flex; /* Hace que el enlace abarque completamente la imagen */
+        overflow: hidden; /* Evita desbordamientos */
+    }
+
+    /* Estilo para las imágenes */
+    section img {
+        width: 0px; /* Tamaño inicial de las imágenes */
+        flex-grow: 1; /* Permite que la imagen se ajuste al espacio disponible */
+        object-fit: cover; /* Mantiene las proporciones sin distorsión */
+        opacity: 0.85; /* Aplicación inicial de transparencia */
+        transition: 0.5s ease; /* Animación suave para el hover */
+    }
+
+    /* Efecto al pasar el mouse */
+    section img:hover {
+        cursor: pointer; /* Indica que la imagen es clicable */
+        width: 20px; /* Aumenta el ancho al hacer hover */
+        opacity: 1; /* Aumenta la opacidad */
+        filter: contrast(120%); /* Mejora el contraste */
+    }
+                                /*esta parte es las plataformas*/
+
+    .plataformas {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Diseño adaptable */
+        gap: 10px; /* Espaciado entre los elementos */
+        padding: 1cm; /* Espaciado interior */
+        justify-items: center; /* Centra los elementos en el grid */
+        align-items: center; /* Centra verticalmente los elementos */
+        width: 50%;
+        padding-left: 27%;
+    }
+    
+    /* Estilo para los enlaces */
+    .plataformas a {
+        display: block; /* Asegura que el enlace envuelva completamente la imagen */
+        width: 100px; /* Tamaño base para las imágenes */
+        height: 100px;
+        transition: transform 0.3s ease; /* Animación suave al hacer hover */
+    }
+    
+    /* Estilo para las imágenes */
+    .plataformas img {
+        width: 100%; /* Imagen ocupa todo el espacio disponible */
+        height: 100%; /* Escala proporcional */
+        object-fit: cover; /* Asegura que la imagen no se distorsione */
+    }
+    
+    /* Animación al pasar el mouse */
+    .plataformas a:hover {
+        transform: scale(1.1); /* Aumenta el tamaño ligeramente */
+    }
+
+    footer {
+        display: flex;
+        text-align: center;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+
+    footer p{
+        color: rgb(255, 0, 0);
+    }
+
+    /* Media Query para dispositivos móviles */
+    @media (max-width: 768px) {
+    /* Ajustes para la sección */
+    section {
+        flex-direction: column; /* Acomoda las imágenes en una sola columna */
+        height: auto; /* Deja que crezca según el contenido */
+    }
+
+    /* Ajustes para las imágenes en section */
+    section img {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        height: auto; /* Mantiene proporción */
+    }
+
+    /* Ajustes para las plataformas */
+    .plataformas {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en móviles */
+        gap: 50px; /* Reduce el espacio entre elementos */
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Ajustes para los enlaces de plataformas */
+    .plataformas a {
+        width: 70px; /* Tamaño reducido para móviles */
+        height: 70px;
+    }
+}
+</style>
